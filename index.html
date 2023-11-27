@@ -29,7 +29,7 @@
             <div class="prev"></div>
             <div class="next"></div>
             <div class="thumbs">
-              <div v-for="(img, index) in games.image" class="thumb">
+              <div v-for="(img, index) in games.image" class="thumb" :class="currentIndex === index ? 'active' : ''">
                 <img :src="img" :alt="games.title[index]" />
               </div>
             </div>

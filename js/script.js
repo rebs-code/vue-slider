@@ -52,9 +52,9 @@ createApp({
             "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
             "Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city",
             "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
-        ],
-        currentIndex: 0,
-      }
+        ]
+      },
+      currentIndex: 0,
     };
   },
 }).mount("#app");
