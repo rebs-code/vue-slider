@@ -33,7 +33,7 @@ createApp({
         },
       ],
       currentIndex: 0,
-      //variabile time ID
+      intervalId: null,
     };
   },
   methods: {
