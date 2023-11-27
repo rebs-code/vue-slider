@@ -51,5 +51,9 @@ data() {
         this.currentIndex = this.games.length - 1;
       }
     },
+    showImage(index) {
+      console.log("show image");
+      this.currentIndex = index;
+    },
   },
 }).mount("#app");
