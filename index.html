@@ -13,12 +13,15 @@
       <div class="container">
         <div class="slider-wrapper" tabindex="0">
           <div class="item">
-            <img :src="games[currentIndex].image" :alt="games[currentIndex].title" @mouseover="stopInterval" @mouseout="startInterval"/>
+            <img
+              :src="games[currentIndex].image"
+              :alt="games[currentIndex].title"
+              @mouseover="stopInterval"
+              @mouseout="startInterval"
+            />
             <div class="text">
               <h3>{{games[currentIndex].title}}</h3>
-              <p>
-                {{games[currentIndex].text}}
-              </p>
+              <p>{{games[currentIndex].text}}</p>
             </div>
           </div>
 
@@ -26,7 +29,12 @@
             <div class="prev" @click="previousGame"></div>
             <div class="next" @click="nextGame"></div>
             <div class="thumbs">
-              <div v-for="(game, index) in games" class="thumb" :class="currentIndex === index ? 'active' : ''" @click="showImage(index)">
+              <div
+                v-for="(game, index) in games"
+                class="thumb"
+                :class="currentIndex === index ? 'active' : ''"
+                @click="showImage(index)"
+              >
                 <img :src="game.image" :alt="games.title" />
               </div>
             </div>

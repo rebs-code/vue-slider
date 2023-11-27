@@ -64,9 +64,6 @@ createApp({
     },
   },
   mounted() {
-    this.startInterval(); 
+    this.startInterval();
   },
 }).mount("#app");
-
-
-
